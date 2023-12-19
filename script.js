@@ -8,3 +8,15 @@ for (let i = 0; i < 16; i++) {
     gridContainerDiv.appendChild(grid);
   }
 }
+
+// Add hovering effect to each square grids
+const grid = document.getElementsByClassName('grid');
+const gridArr = [...grid];
+
+gridArr.forEach(function(gridSquare) {
+  gridSquare.addEventListener('mouseenter', () => {
+    gridSquare.style.backgroundColor = 'black';
+  });
+});
+
+
