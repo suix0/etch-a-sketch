@@ -26,12 +26,6 @@ function hoveringEffect () {
   const blackButton = document.querySelector('.button.black');
   const gridArr = [...grid];
 
-  gridArr.forEach(function(gridSquare) {
-    gridSquare.addEventListener('mouseenter', () => {
-      gridSquare.style.backgroundColor = 'black';
-    });
-  });
-
   let red = 0;
   let green = 0;
   let blue = 0;
@@ -86,6 +80,8 @@ function changeGridSize () {
   });
 }
 
-createGrid();
-hoveringEffect();
-changeGridSize();
+document.addEventListener('DOMContentLoaded', function() {
+  createGrid();
+  hoveringEffect();
+  changeGridSize();
+});
