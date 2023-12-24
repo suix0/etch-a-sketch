@@ -78,8 +78,6 @@ function changeGridSize () {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  createGrid();
-  hoveringEffect();
-  changeGridSize();
-});
+createGrid();
+hoveringEffect();
+changeGridSize();
