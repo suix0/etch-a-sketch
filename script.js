@@ -80,7 +80,7 @@ function changeGridSize () {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   createGrid();
   hoveringEffect();
   changeGridSize();
