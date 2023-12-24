@@ -43,9 +43,7 @@ function hoveringEffect () {
   });
 
   eraseButton.addEventListener('click', () => {
-    const grid = document.getElementsByClassName('grid');
-    const removeCurrentGridArr = [...grid];
-    removeCurrentGridArr.forEach((currentGrid) => {
+    gridArr.forEach((currentGrid) => {
       currentGrid.style.backgroundColor = 'transparent';
     });
   });
