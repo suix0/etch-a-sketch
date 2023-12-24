@@ -20,11 +20,35 @@ body {
 
 .header h1,
 .header p {
-  margin: 10px 20px;
   padding: 0;
   font-style: oblique;
   line-height: 1.6;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
+.header p {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.newGrid {
+  margin: 16px 16px 0px;
+}
+
+.newGrid,
+.button {
+  min-height: 32px;
+  border-radius: 12px;
+  border: 2px solid #6499E9;
+  background-color: #BEFFF7;
+  color: #6499E9;
+  font-weight: 900;
+  font-size: 1em;
 }
 
 .container {
@@ -32,19 +56,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 2px solid #6499E9;
+  border: 1px solid #6499E9;
   width: 700px;
-  height: fit-content;
-  padding: 12px;
+  height: 649px;
   margin: 16px;
 }
 
 .grid {
   flex: auto;
   padding: 2px;
-  width: 36px;
-  height: 34px;
-  border: 1px solid #6499E9;
 }
 
+.color-selection {
+  display: flex;
+  gap: 8px;
+}
 
